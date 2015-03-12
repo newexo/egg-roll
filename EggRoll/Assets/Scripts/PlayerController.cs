@@ -2,15 +2,29 @@
 using System.Collections;
 
 public class PlayerController : MonoBehaviour {
-
-
-
 	public float acceleration;
+	public GUIText counttext;
+	public GUIText victorytext;
 	private int count;
+	private int maxcount = 8;
+
+	void updatetext()
+	{
+		counttext.text = "Count: " + count.ToString();
+		if (count < maxcount) 
+		{
+			victorytext.text = "You have not won yet.";
+		}
+		else
+		{
+			victorytext.text = "You win!";
+		}
+	}
 
 	void Start ()
 	{
 		count = 0;
+		updatetext ();
 	}
 
 	void FixedUpdate () 
@@ -21,7 +35,6 @@ public class PlayerController : MonoBehaviour {
 		var movement = new Vector3 (moveHorizontal, 0, moveVertical);
 
 		GetComponent<Rigidbody>().AddForce(movement * acceleration * Time.deltaTime);
-		
 	}
 
 	void OnTriggerEnter (Collider other) 
@@ -29,13 +42,8 @@ public class PlayerController : MonoBehaviour {
 		if(other.gameObject.tag == "PickUp")
 		{
 			other.gameObject.SetActive(false);
-			count = count + 1;
+			count++;
+			updatetext();
 		}
 	}
-
-	// Update is called once per frame
-	void Update () {
-	//HI
-	}
 }
-
