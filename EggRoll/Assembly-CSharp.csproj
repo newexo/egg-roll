@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{48FDAEB3-8A58-0563-2EA3-036A5F23FDCC}</ProjectGuid>
+	<ProjectGuid>{72E14112-AB8E-B370-8A8D-EB85418F263C}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -49,23 +49,6 @@
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Rotator.cs" />
-     <Compile Include="Assets\ShaderForge\Example Assets\Scripts\EditorLabel.cs" />
-     <Compile Include="Assets\ShaderForge\Example Assets\Scripts\EnableCameraDepthInForward.cs" />
-     <None Include="Assets\ShaderForge\Example Assets\Shaders\LightCone.shader" />
-     <None Include="Assets\ShaderForge\test.shader" />
-     <None Include="Assets\ShaderForge\Readme.txt" />
-     <None Include="Assets\ShaderForge\Example Assets\Shaders\MaterialPlatform.shader" />
-     <None Include="Assets\ShaderForge\Example Assets\Shaders\Vegetation.shader" />
-     <None Include="Assets\ShaderForge\Example Assets\Shaders\VertexAnimation.shader" />
-     <None Include="Assets\ShaderForge\Example Assets\Shaders\Cubemaps.shader" />
-     <None Include="Assets\ShaderForge\Example Assets\Shaders\Refraction.shader" />
-     <None Include="Assets\ShaderForge\Example Assets\Shaders\Parallax.shader" />
-     <None Include="Assets\ShaderForge\Example Assets\Shaders\LightWrapping.shader" />
-     <None Include="Assets\ShaderForge\Example Assets\Shaders\VertexColorRounding.shader" />
-     <None Include="Assets\ShaderForge\Example Assets\Shaders\TessellationDisplacement.shader" />
-     <None Include="Assets\ShaderForge\Example Assets\Shaders\Tiles.shader" />
-     <None Include="Assets\ShaderForge\Example Assets\Shaders\PixelRotator.shader" />
-     <None Include="Assets\ShaderForge\Example Assets\Shaders\CustomLighting.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>F:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
