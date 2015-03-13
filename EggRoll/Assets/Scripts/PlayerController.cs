@@ -6,11 +6,12 @@ public class PlayerController : MonoBehaviour
 	public float acceleration;
 	public GUIText counttext;
 	public GUIText victorytext;
+	public GameObject pickups;
 	private int count;
-	private int maxcount = 8;
 
 	void updatetext()
 	{
+		int maxcount = pickups.GetComponent<Pickups>().count;
 		counttext.text = "Count: " + count.ToString();
 		if (count < maxcount) 
 		{

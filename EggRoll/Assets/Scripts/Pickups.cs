@@ -8,9 +8,6 @@ public class Pickups : MonoBehaviour {
 	private Stack s;
 
 	void Start () {
-//		var q = new Vector3(r * Mathf.Cos(1 * Mathf.PI / count), r * Mathf.Sin(1 * Mathf.PI / count), 0.5f);
-//		clone = (Rigidbody) Instantiate(prefab, q, prefab.rotation);
-
 		s = new Stack();
 		float phi = 2.0f * Mathf.PI / count;
 		for (int i = 0; i < count; i++) 
@@ -19,10 +16,5 @@ public class Pickups : MonoBehaviour {
 			Rigidbody clone = (Rigidbody) Instantiate(prefab, q, prefab.rotation);
 			s.Push(clone);
 		}
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
 	}
 }
